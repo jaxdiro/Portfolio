@@ -1,0 +1,192 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>Jackie Diaz — Work</title>
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --paper-soft:#F1F1F1;
+    --ink:#121212;
+    --slate:#6E6E6E;
+    --line:rgba(18,18,18,0.16);
+    --placeholder-fill:#E7E7E7;
+    --placeholder-line:rgba(18,18,18,0.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
+      --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
+    --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; font-size:17px; line-height:1.6; }
+  a{ color:inherit; }
+  h1,h2,h3{ margin:0; text-wrap:balance; font-weight:600; }
+  p{ margin:0; }
+  .wrap{ max-width:1180px; margin:0 auto; padding-inline:clamp(1.25rem,4vw,3rem); }
+  .eyebrow{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--slate); font-weight:600; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+
+  .ph{ border:1.5px dashed var(--placeholder-line); background:var(--placeholder-fill); color:var(--slate); display:flex; align-items:center; justify-content:center; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+
+  header{ position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding-block:1rem; gap:1rem; }
+  .mark{ text-decoration:none; }
+  .mark .name{ font-size:1.3125rem; font-weight:700; }
+  .mark .name .mark-star{ display:inline-block; margin-inline:.22em; font-size:.68em; animation:mark-spin 4s linear infinite; transform-origin:50% 55%; }
+  @keyframes mark-spin{ to{ transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .mark .name .mark-star{ animation:none; } }
+  .navlinks{ list-style:none; display:flex; gap:clamp(1.1rem,2.6vw,2.1rem); margin:0; padding:0; flex-wrap:wrap; }
+  .navlinks a{ font-size:.92rem; text-decoration:none; padding:.3rem 0; border-bottom:1px solid transparent; color:var(--slate); }
+  .navlinks a.active{ color:var(--ink); border-color:var(--ink); }
+  .navlinks a:hover{ color:var(--ink); border-color:var(--slate); }
+
+  .back-row{ padding-block:1.2rem; }
+  .crumbs{ display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; font-size:.86rem; color:var(--slate); }
+  .crumbs a{ color:inherit; text-decoration:none; }
+  .crumbs a:hover{ color:var(--ink); }
+  .crumbs .crumb-current{ color:var(--ink); font-weight:600; }
+
+  .intro{ padding-block:clamp(3rem,7vw,5rem) clamp(2rem,5vw,3rem); }
+  .intro-inner{ max-width:46rem; }
+  .intro h1{ font-size:clamp(2rem,4.4vw,3.2rem); line-height:1.12; }
+  .intro p{ max-width:52ch; margin-top:1.3rem; color:var(--slate); font-size:1.05rem; }
+
+  #work{ border-top:1px solid var(--line); padding-block:clamp(2rem,5vw,3rem); }
+  .proj-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.4rem,3vw,2.2rem); align-items:start; }
+  .proj-block{ display:flex; flex-direction:column; }
+
+  .proj-visual{ margin-top:1.1rem; width:100%; max-width:260px; aspect-ratio:1020/1350; border-radius:6px; font-size:.62rem; }
+
+  .proj-title-row{ display:flex; flex-direction:column; align-items:flex-start; gap:.35rem; }
+  .proj-name{ font-size:clamp(1.02rem,1.7vw,1.2rem); font-weight:700; }
+  .proj-eyebrow{ font-size:.66rem; letter-spacing:.09em; text-transform:uppercase; color:var(--slate); font-weight:600; }
+  .proj-tag{ font-size:.6rem; letter-spacing:.05em; text-transform:uppercase; font-weight:700; color:var(--slate); border:1px solid var(--line); border-radius:3px; padding:.15rem .45rem; }
+
+  .proj-chips-wrap{ max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(0.16,1,0.3,1); }
+  .proj-block:hover .proj-chips-wrap, .proj-block:focus-within .proj-chips-wrap{ max-height:8rem; }
+  .proj-chips{ display:flex; flex-direction:column; gap:.4rem; padding-top:.75rem; }
+  .proj-chip{ font-size:.6rem; letter-spacing:.05em; text-transform:uppercase; color:var(--slate); border-bottom:1px solid var(--line); padding-bottom:.15rem; align-self:flex-start; }
+  @media (prefers-reduced-motion: reduce){ .proj-chips-wrap{ transition:none; } }
+
+  .proj-link{ display:inline-block; margin-top:.7rem; font-size:.8rem; font-weight:600; text-decoration:none; color:var(--ink); white-space:nowrap; }
+  .proj-link:hover{ color:var(--slate); }
+  .proj-link .proj-link-star{ display:inline-block; margin-right:.35em; animation:mark-spin 4s linear infinite; transform-origin:50% 55%; }
+  @media (prefers-reduced-motion: reduce){ .proj-link .proj-link-star{ animation:none; } }
+
+  @media (max-width:760px){
+    .proj-grid{ grid-template-columns:1fr; max-width:340px; margin-inline:auto; }
+  }
+
+  @keyframes copy-reveal{
+    from{ opacity:0; transform:translateY(14px) scale(.97); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+  .reveal{ animation:copy-reveal .8s cubic-bezier(0.16,1,0.3,1) both; }
+  .reveal-1{ animation-delay:.05s; }
+  .reveal-2{ animation-delay:.16s; }
+  .reveal-3{ animation-delay:.27s; }
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-1, .reveal-2, .reveal-3{ animation:none; }
+  }
+
+  @media (max-width:560px){
+    .navlinks{ gap:.8rem; }
+    .navlinks a{ font-size:.8rem; }
+  }
+</style>
+
+<header>
+  <div class="wrap nav">
+    <a href="../" class="mark">
+      <span class="name">Jackie<span class="mark-star">✳</span>Diaz</span>
+    </a>
+    <ul class="navlinks">
+      <li><a href="#work" class="active">Work</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../resume/">Resume</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap back-row">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>/</span>
+      <span class="crumb-current">Work</span>
+    </nav>
+  </div>
+
+  <section class="intro">
+    <div class="wrap intro-inner">
+      <span class="eyebrow reveal reveal-1">Selected Work</span>
+      <h1 class="reveal reveal-2">Three marketing systems, built from the ground up.</h1>
+      <p class="reveal reveal-3">Strategy, creative direction, and paid media — treated as one connected system rather than three separate jobs.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="proj-grid">
+
+        <div class="proj-block">
+          <div class="proj-title-row">
+            <span class="proj-name">Kootenay Co-op Grocery Store</span>
+            <span class="proj-eyebrow">Integrated Marketing Campaign</span>
+            <span class="proj-tag">In-house</span>
+          </div>
+          <div class="proj-chips-wrap">
+            <div class="proj-chips">
+              <span class="proj-chip">Strategy &amp; Planning</span>
+              <span class="proj-chip">Creative Direction &amp; Production</span>
+              <span class="proj-chip">Paid Media &amp; Analytics</span>
+            </div>
+          </div>
+          <a href="kootenay-coop/" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
+          <div class="proj-visual ph">1020 × 1350</div>
+        </div>
+
+        <div class="proj-block">
+          <div class="proj-title-row">
+            <span class="proj-name">Building Momentum Bikepacking</span>
+            <span class="proj-eyebrow">Volunteer Marketing Leadership</span>
+            <span class="proj-tag">Volunteer</span>
+          </div>
+          <div class="proj-chips-wrap">
+            <div class="proj-chips">
+              <span class="proj-chip">Strategy &amp; Planning</span>
+              <span class="proj-chip">Creative Direction &amp; Production</span>
+            </div>
+          </div>
+          <a href="building-momentum/" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
+          <div class="proj-visual ph">1020 × 1350</div>
+        </div>
+
+        <div class="proj-block">
+          <div class="proj-title-row">
+            <span class="proj-name">TrailSync App Design</span>
+            <span class="proj-eyebrow">UX Research &amp; Product Design</span>
+            <span class="proj-tag">Concept</span>
+          </div>
+          <div class="proj-chips-wrap">
+            <div class="proj-chips">
+              <span class="proj-chip">UX Research</span>
+              <span class="proj-chip">Product Design</span>
+              <span class="proj-chip">Digital Experience</span>
+            </div>
+          </div>
+          <a href="#" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
+          <div class="proj-visual ph">1020 × 1350</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+</body></html>
