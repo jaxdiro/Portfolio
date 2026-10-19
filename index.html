@@ -1,170 +1,295 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
-<title>Jackie Diaz</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Jackie Diaz — Marketing, Content &amp; Creative Direction</title>
 <style>
-  :root{
-    --paper:#FFFFFF;
-    --paper-soft:#F1F1F1;
-    --ink:#121212;
-    --slate:#6E6E6E;
-    --line:rgba(18,18,18,0.16);
-    --placeholder-fill:#E7E7E7;
-    --placeholder-line:rgba(18,18,18,0.35);
+:root{
+  --paper:#FFFFFF;--paper-soft:#F1F1F1;--ink:#121212;--slate:#6E6E6E;
+  --line:rgba(18,18,18,0.16);--ph-fill:#E7E7E7;--ph-line:rgba(18,18,18,0.35);
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141414;--paper-soft:#1F1F1F;--ink:#F0F0F0;--slate:#9C9C9C;
+    --line:rgba(240,240,240,0.18);--ph-fill:#262626;--ph-line:rgba(240,240,240,0.4);
   }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
-      --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
-    --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
-  }
+}
+:root[data-theme="dark"]{
+  --paper:#141414;--paper-soft:#1F1F1F;--ink:#F0F0F0;--slate:#9C9C9C;
+  --line:rgba(240,240,240,0.18);--ph-fill:#262626;--ph-line:rgba(240,240,240,0.4);
+}
 
-  *,*::before,*::after{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
-  body{
-    margin:0; background:var(--paper); color:var(--ink);
-    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    font-size:17px; line-height:1.6;
-  }
-  a{ color:inherit; }
-  h1,h2,h3{ margin:0; text-wrap:balance; font-weight:600; }
-  p{ margin:0; }
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6;}
+a{color:inherit;}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:600;}
+p{margin:0;}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
 
-  .wrap{ max-width:1180px; margin:0 auto; padding-inline:clamp(1.25rem,4vw,3rem); }
-  .eyebrow{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--slate); font-weight:600; }
+.ph{border:1.5px dashed var(--ph-line);background:var(--ph-fill);color:var(--slate);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
+.ph-inline{border:1.5px dashed var(--ph-line);background:var(--ph-fill);color:var(--slate);
+  font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+  padding:.2rem .5rem;border-radius:3px;display:inline-block;}
 
-  a:focus-visible, button:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(1.25rem,4vw,3rem);}
+.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+section{padding-block:clamp(3rem,7vw,5rem);}
 
-  .ph{
-    border:1.5px dashed var(--placeholder-line);
-    background:var(--placeholder-fill);
-    color:var(--slate);
-    display:flex; align-items:center; justify-content:center;
-    font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600;
-  }
+header{position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:1rem;gap:1rem;}
+.mark{text-decoration:none;}
+.mark .name{font-size:1.3125rem;font-weight:700;}
+.mark-star{display:inline-block;margin-inline:.22em;font-size:.68em;
+  animation:mark-spin 4s linear infinite;transform-origin:50% 55%;}
+@keyframes mark-spin{to{transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce){.mark-star{animation:none;}}
+.navlinks{list-style:none;display:flex;gap:clamp(1.1rem,2.6vw,2.1rem);margin:0;padding:0;flex-wrap:wrap;}
+.navlinks a{font-size:.92rem;text-decoration:none;padding:.3rem 0;
+  border-bottom:1px solid transparent;color:var(--slate);}
+.navlinks a.active{color:var(--ink);border-color:var(--ink);}
+.navlinks a:hover{color:var(--ink);border-color:var(--slate);}
 
-  header{
-    position:sticky; top:0; z-index:100;
-    background:color-mix(in srgb, var(--paper) 92%, transparent);
-    backdrop-filter:blur(6px); border-bottom:1px solid var(--line);
-  }
-  .nav{ display:flex; align-items:center; justify-content:space-between; padding-block:1rem; gap:1rem; }
-  .mark{ text-decoration:none; display:flex; align-items:center; gap:.7rem; }
-  .mark .logo-ph{ width:34px; height:34px; border-radius:6px; }
-  .mark .name{ font-size:1.3125rem; font-weight:700; }
-  .mark .name .mark-star{ display:inline-block; margin-inline:.22em; font-size:.68em; animation:mark-spin 4s linear infinite; transform-origin:50% 55%; }
-  @keyframes mark-spin{ to{ transform:rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce){
-    .mark .name .mark-star{ animation:none; }
-  }
-  .navlinks{ list-style:none; display:flex; gap:clamp(1.1rem,2.6vw,2.1rem); margin:0; padding:0; flex-wrap:wrap; }
-  .navlinks a{
-    font-size:.92rem; text-decoration:none; padding:.3rem 0;
-    border-bottom:1px solid transparent; color:var(--slate);
-  }
-  .navlinks a.active{ color:var(--ink); border-color:var(--ink); }
-  .navlinks a:hover{ color:var(--ink); border-color:var(--slate); }
+@keyframes copy-reveal{
+  from{opacity:0;transform:translateY(14px) scale(.97);}
+  to{opacity:1;transform:translateY(0) scale(1);}
+}
+.reveal{animation:copy-reveal .8s cubic-bezier(0.16,1,0.3,1) both;}
+.reveal-1{animation-delay:.05s;}
+.reveal-2{animation-delay:.16s;}
+.reveal-3{animation-delay:.27s;}
+.reveal-4{animation-delay:.38s;}
+.reveal-5{animation-delay:.49s;}
+@media(prefers-reduced-motion:reduce){
+  .reveal,.reveal-1,.reveal-2,.reveal-3,.reveal-4,.reveal-5{animation:none;}
+}
 
-  .hero{ padding-block:clamp(3rem,7vw,5rem); }
-  .hero-grid{ display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(2rem,5vw,3.5rem); align-items:center; }
-  .hero-text h1{ font-size:clamp(2rem,4.4vw,3.4rem); line-height:1.12; max-width:22ch; }
-  .hero-sub{ max-width:50ch; margin-top:1.4rem; color:var(--slate); font-size:1.05rem; }
-  .hero-visual{
-    aspect-ratio:1020/1920; border-radius:8px; font-size:.72rem;
-    position:relative; overflow:hidden; cursor:default;
-    transition:border-color .3s ease, background-color .3s ease;
-  }
-  .hero-visual .hv-label{ transition:opacity .3s ease; }
-  .hero-visual .hv-hover{
-    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-    text-align:center; padding:1.5rem; opacity:0; transform:translateY(8px);
-    transition:opacity .35s cubic-bezier(0.16,1,0.3,1), transform .35s cubic-bezier(0.16,1,0.3,1);
-    font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600; color:var(--ink);
-  }
-  .hero-visual:hover{ border-color:var(--ink); background:color-mix(in srgb, var(--placeholder-fill) 80%, var(--ink) 8%); }
-  .hero-visual:hover .hv-label{ opacity:0; }
-  .hero-visual:hover .hv-hover{ opacity:1; transform:translateY(0); }
-  @media (prefers-reduced-motion: reduce){
-    .hero-visual, .hero-visual .hv-label, .hero-visual .hv-hover{ transition:none; }
-  }
+/* Hero */
+.hero{padding-top:clamp(3.5rem,9vw,7rem);padding-bottom:clamp(3.5rem,9vw,7rem);}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;}
+.hero-eyebrow{display:flex;align-items:center;gap:.6rem;margin-bottom:1.3rem;}
+.hero-dot{width:7px;height:7px;border-radius:50%;background:var(--ink);flex-shrink:0;}
+.hero-h1{font-size:clamp(2.4rem,5.5vw,4rem);line-height:1.07;max-width:18ch;}
+.hero-sub{margin-top:1.3rem;color:var(--slate);max-width:46ch;font-size:1.05rem;}
+.hero-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem;}
+.btn-primary{background:var(--ink);color:var(--paper);padding:.85rem 1.7rem;border-radius:4px;
+  text-decoration:none;font-size:.94rem;font-weight:600;}
+.btn-primary:hover{opacity:.82;}
+.btn-ghost{border:1px solid var(--line);padding:.82rem 1.65rem;border-radius:4px;
+  text-decoration:none;font-size:.94rem;color:var(--ink);}
+.btn-ghost:hover{border-color:var(--ink);}
+.hero-img{aspect-ratio:4/5;border-radius:8px;}
 
-  .buckets{ display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1.8rem; }
-  .bucket{
-    font-size:.7rem; letter-spacing:.05em; text-transform:uppercase; font-weight:600;
-    color:var(--ink); padding:.4rem .7rem; border:1px solid var(--line); border-radius:3px;
-  }
+/* Who I am */
+#who{border-top:1px solid var(--line);}
+.who-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;}
+.who-heading{font-size:clamp(1.5rem,3vw,2rem);margin-top:.7rem;}
+.who-body{display:flex;flex-direction:column;gap:1rem;}
+.who-body p{color:var(--slate);}
 
-  .cta-row{ margin-top:2rem; display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; }
-  .btn{
-    font-size:.92rem; font-weight:600; background:var(--ink); color:var(--paper); text-decoration:none;
-    padding:.85rem 1.5rem; border-radius:3px; border:none; cursor:pointer; display:inline-block;
-  }
-  .btn:hover{ opacity:.85; }
-  .cta-hand{ font-size:.92rem; color:var(--slate); }
+/* What I do */
+#what{border-top:1px solid var(--line);}
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem;}
+.cap-item{border:1px solid var(--line);border-radius:6px;padding:1.5rem 1.3rem;}
+.cap-num{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);
+  font-weight:600;margin-bottom:.8rem;}
+.cap-title{font-size:1.02rem;font-weight:600;}
+.cap-desc{color:var(--slate);font-size:.88rem;margin-top:.5rem;line-height:1.5;}
 
-  section{ padding-block:clamp(3.5rem,7vw,4.5rem); }
+/* Tools */
+#tools{border-top:1px solid var(--line);}
+.tools-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;}
+.tool-tag{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:3px;padding:.35rem .65rem;color:var(--slate);}
 
-  @keyframes copy-reveal{
-    from{ opacity:0; transform:translateY(14px) scale(.97); }
-    to{ opacity:1; transform:translateY(0) scale(1); }
-  }
-  .reveal{ animation:copy-reveal .8s cubic-bezier(0.16,1,0.3,1) both; }
-  .reveal-1{ animation-delay:.05s; }
-  .reveal-2{ animation-delay:.16s; }
-  .reveal-3{ animation-delay:.27s; }
-  .reveal-4{ animation-delay:.38s; }
-  @media (prefers-reduced-motion: reduce){
-    .reveal, .reveal-1, .reveal-2, .reveal-3, .reveal-4{ animation:none; }
-  }
+/* Selected work */
+#selected{border-top:1px solid var(--line);}
+.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.4rem;}
+.preview-card{border:1px solid var(--line);border-radius:6px;padding:1.6rem;
+  display:flex;flex-direction:column;gap:.45rem;text-decoration:none;color:inherit;
+  transition:border-color .25s;}
+.preview-card:hover{border-color:var(--ink);}
+.preview-cat{font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+.preview-stat{font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;margin-top:.5rem;line-height:1;}
+.preview-stat-label{font-size:.78rem;color:var(--slate);}
+.preview-title{font-size:1rem;font-weight:600;margin-top:.8rem;}
+.preview-desc{font-size:.87rem;color:var(--slate);}
+.preview-cta{margin-top:auto;padding-top:1rem;font-size:.82rem;color:var(--slate);}
 
-  @media (max-width:860px){
-    .hero-grid{ grid-template-columns:1fr; }
-    .hero-visual{ order:-1; max-width:280px; margin-inline:auto; }
-  }
-  @media (max-width:560px){
-    .navlinks{ gap:.8rem; }
-    .navlinks a{ font-size:.8rem; }
-  }
+/* Contact */
+#contact{border-top:1px solid var(--line);}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;
+  gap:2rem;flex-wrap:wrap;padding-block:clamp(2.5rem,5vw,4rem);}
+.contact-left h2{font-size:clamp(1.4rem,2.8vw,2rem);}
+.contact-left p{color:var(--slate);margin-top:.5rem;}
+.contact-links{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;}
+.contact-link{font-size:.94rem;text-decoration:none;
+  border-bottom:1px solid var(--ink);padding-bottom:.15rem;}
+.contact-link:hover{color:var(--slate);border-color:var(--slate);}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-img{display:none;}
+  .who-grid{grid-template-columns:1fr;}
+  .cap-grid{grid-template-columns:repeat(2,1fr);}
+  .preview-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:560px){
+  .cap-grid{grid-template-columns:1fr;}
+  .preview-grid{grid-template-columns:1fr;}
+  .navlinks{gap:.8rem;}
+  .navlinks a{font-size:.8rem;}
+}
 </style>
+</head>
+<body>
 
 <header>
   <div class="wrap nav">
-    <a href="/" class="mark">
-      <span class="name">Jackie<span class="mark-star">✳</span>Diaz</span>
-    </a>
+    <a href="." class="mark"><span class="name">Jackie<span class="mark-star">✳</span>Diaz</span></a>
     <ul class="navlinks">
       <li><a href="work/">Work</a></li>
       <li><a href="about/">About</a></li>
       <li><a href="resume/">Resume</a></li>
-      <li><a href="contact/">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="home">
+
+  <section class="hero">
     <div class="wrap hero-grid">
-      <div class="hero-text">
-        <h1 class="reveal reveal-1">I bridge the gap&nbsp;between marketing, design, and the people they're made for.</h1>
-        <p class="hero-sub reveal reveal-2">I'm Jackie Diaz — a marketing and communications coordinator, content creator, and strategist. I coordinate integrated marketing at Kootenay Co-op, run a freelance communications-design practice, and take on marketing leadership and content creation for Building Momentum Bikepacking, an inclusive bikepacking nonprofit — building the strategy, creative, and paid systems behind each one.</p>
-        <div class="buckets reveal reveal-3">
-          <span class="bucket">Strategy &amp; Planning</span>
-          <span class="bucket">Creative Direction &amp; Production</span>
-          <span class="bucket">Paid Media &amp; Analytics</span>
+      <div>
+        <div class="hero-eyebrow reveal reveal-1">
+          <span class="hero-dot"></span>
+          <span class="eyebrow">Nelson, BC — Remote-ready</span>
         </div>
-        <div class="cta-row reveal reveal-4">
-          <a href="work/" class="btn">View the work →</a>
-          <span class="cta-hand">3 case studies, built not just posted</span>
+        <h1 class="hero-h1 reveal reveal-2">Marketing strategy, content &amp; creative direction.</h1>
+        <p class="hero-sub reveal reveal-3">I plan campaigns, shoot and edit the content, manage the ads, and measure what worked — end to end, under one consistent visual language.</p>
+        <div class="hero-actions reveal reveal-4">
+          <a href="work/" class="btn-primary">See the work →</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
         </div>
       </div>
-      <div class="hero-visual ph">
-        <span class="hv-label">video</span>
-        <span class="hv-hover">More content here →</span>
+      <div class="hero-img ph">photo</div>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="wrap who-grid">
+      <div>
+        <span class="eyebrow">Who I am</span>
+        <h2 class="who-heading">Marketing &amp; communications, with an eye for design.</h2>
+      </div>
+      <div class="who-body">
+        <p>I'm a marketing and communications professional based in Nelson, BC — currently the Marketing &amp; Communications Coordinator at Kootenay Co-op, and the volunteer Marketing &amp; Digital Engagement Lead at Building Momentum Bikepacking.</p>
+        <p>I work across the full stack: strategy and analytics, photography and video, graphic design and copywriting, and paid media. My approach keeps a consistent visual language across every channel — from a social post to a printed sign to a paid ad — because the best campaigns feel intentional at every touchpoint.</p>
       </div>
     </div>
   </section>
-</main>
 
-</body></html>
+  <section id="what">
+    <div class="wrap">
+      <span class="eyebrow">What I do</span>
+      <div class="cap-grid">
+        <div class="cap-item">
+          <div class="cap-num">01</div>
+          <div class="cap-title">Marketing Strategy</div>
+          <div class="cap-desc">Multi-channel campaign planning, analytics-driven direction, and systems that keep working between launches.</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-num">02</div>
+          <div class="cap-title">Creative Direction</div>
+          <div class="cap-desc">Photography, videography, graphic design, and copywriting under one consistent visual language.</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-num">03</div>
+          <div class="cap-title">Social &amp; Content</div>
+          <div class="cap-desc">Platform-native content, community storytelling, and channel management across Instagram, Facebook, and beyond.</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-num">04</div>
+          <div class="cap-title">Paid Advertising</div>
+          <div class="cap-desc">Meta Ads, Google Ads, and traditional media — planned, run, and reported with clear performance data.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <div class="wrap">
+      <span class="eyebrow">Tools</span>
+      <div class="tools-list">
+        <span class="tool-tag">Adobe Premiere Pro</span>
+        <span class="tool-tag">Adobe Lightroom</span>
+        <span class="tool-tag">Adobe Photoshop</span>
+        <span class="tool-tag">Adobe Illustrator</span>
+        <span class="tool-tag">Canva</span>
+        <span class="tool-tag">Meta Ads Manager</span>
+        <span class="tool-tag">Google Ads</span>
+        <span class="tool-tag">Google Analytics</span>
+        <span class="tool-tag">Mailchimp</span>
+        <span class="tool-tag">Claude Code</span>
+        <span class="tool-tag">Shopify</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="selected">
+    <div class="wrap">
+      <span class="eyebrow">Selected Work</span>
+      <div class="preview-grid">
+        <a href="work/#marketing" class="preview-card">
+          <div class="preview-cat">Marketing Strategy</div>
+          <div class="preview-stat">22×</div>
+          <div class="preview-stat-label">Audience reach vs. follower count</div>
+          <div class="preview-title">Building Momentum Bikepacking</div>
+          <div class="preview-desc">Organic content system. 120.3K views, $0 paid spend, 12 months.</div>
+          <div class="preview-cta">View case study →</div>
+        </a>
+        <a href="work/#marketing" class="preview-card">
+          <div class="preview-cat">Integrated Strategy + Content</div>
+          <div class="preview-stat">4</div>
+          <div class="preview-stat-label">Channels: web, email, social &amp; in-store</div>
+          <div class="preview-title">Kootenay Co-op</div>
+          <div class="preview-desc">5-week integrated campaign and ongoing weekly content creation.</div>
+          <div class="preview-cta">View case study →</div>
+        </a>
+        <a href="work/#ads" class="preview-card">
+          <div class="preview-cat">Paid Advertising</div>
+          <div class="preview-stat" style="font-size:1.3rem;font-weight:400;color:var(--slate);margin-top:.5rem;">Meta · Google · Print</div>
+          <div class="preview-stat-label" style="margin-top:.4rem;">Campaign setup, targeting &amp; reporting</div>
+          <div class="preview-title">Paid Media</div>
+          <div class="preview-desc">End-to-end paid campaigns across digital and traditional channels.</div>
+          <div class="preview-cta">View work →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <h2>Let's talk about the work.</h2>
+          <p>Open to remote marketing, communications, and content roles.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:diazr.jackie@gmail.com" class="contact-link">diazr.jackie@gmail.com</a>
+          <a href="#" class="contact-link">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

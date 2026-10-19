@@ -1,192 +1,621 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
 <title>Jackie Diaz — Work</title>
 <style>
-  :root{
-    --paper:#FFFFFF;
-    --paper-soft:#F1F1F1;
-    --ink:#121212;
-    --slate:#6E6E6E;
-    --line:rgba(18,18,18,0.16);
-    --placeholder-fill:#E7E7E7;
-    --placeholder-line:rgba(18,18,18,0.35);
+:root{
+  --paper:#FFFFFF;--paper-soft:#F1F1F1;--ink:#121212;--slate:#6E6E6E;
+  --line:rgba(18,18,18,0.16);--ph-fill:#E7E7E7;--ph-line:rgba(18,18,18,0.35);
+  --hh:3.7rem;
+  --th:2.9rem;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141414;--paper-soft:#1F1F1F;--ink:#F0F0F0;--slate:#9C9C9C;
+    --line:rgba(240,240,240,0.18);--ph-fill:#262626;--ph-line:rgba(240,240,240,0.4);
   }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
-      --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#141414; --paper-soft:#1F1F1F; --ink:#F0F0F0; --slate:#9C9C9C;
-    --line:rgba(240,240,240,0.18); --placeholder-fill:#262626; --placeholder-line:rgba(240,240,240,0.4);
-  }
-  *,*::before,*::after{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
-  body{ margin:0; background:var(--paper); color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; font-size:17px; line-height:1.6; }
-  a{ color:inherit; }
-  h1,h2,h3{ margin:0; text-wrap:balance; font-weight:600; }
-  p{ margin:0; }
-  .wrap{ max-width:1180px; margin:0 auto; padding-inline:clamp(1.25rem,4vw,3rem); }
-  .eyebrow{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--slate); font-weight:600; }
-  a:focus-visible, button:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+}
+:root[data-theme="dark"]{
+  --paper:#141414;--paper-soft:#1F1F1F;--ink:#F0F0F0;--slate:#9C9C9C;
+  --line:rgba(240,240,240,0.18);--ph-fill:#262626;--ph-line:rgba(240,240,240,0.4);
+}
 
-  .ph{ border:1.5px dashed var(--placeholder-line); background:var(--placeholder-fill); color:var(--slate); display:flex; align-items:center; justify-content:center; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6;}
+a{color:inherit;}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600;}
+p{margin:0;}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
 
-  header{ position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
-  .nav{ display:flex; align-items:center; justify-content:space-between; padding-block:1rem; gap:1rem; }
-  .mark{ text-decoration:none; }
-  .mark .name{ font-size:1.3125rem; font-weight:700; }
-  .mark .name .mark-star{ display:inline-block; margin-inline:.22em; font-size:.68em; animation:mark-spin 4s linear infinite; transform-origin:50% 55%; }
-  @keyframes mark-spin{ to{ transform:rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce){ .mark .name .mark-star{ animation:none; } }
-  .navlinks{ list-style:none; display:flex; gap:clamp(1.1rem,2.6vw,2.1rem); margin:0; padding:0; flex-wrap:wrap; }
-  .navlinks a{ font-size:.92rem; text-decoration:none; padding:.3rem 0; border-bottom:1px solid transparent; color:var(--slate); }
-  .navlinks a.active{ color:var(--ink); border-color:var(--ink); }
-  .navlinks a:hover{ color:var(--ink); border-color:var(--slate); }
+.ph{border:1.5px dashed var(--ph-line);background:var(--ph-fill);color:var(--slate);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
+.ph-inline{border:1.5px dashed var(--ph-line);background:var(--ph-fill);color:var(--slate);
+  font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+  padding:.2rem .5rem;border-radius:3px;display:inline-block;}
 
-  .back-row{ padding-block:1.2rem; }
-  .crumbs{ display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; font-size:.86rem; color:var(--slate); }
-  .crumbs a{ color:inherit; text-decoration:none; }
-  .crumbs a:hover{ color:var(--ink); }
-  .crumbs .crumb-current{ color:var(--ink); font-weight:600; }
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(1.25rem,4vw,3rem);}
+.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);font-weight:600;}
 
-  .intro{ padding-block:clamp(3rem,7vw,5rem) clamp(2rem,5vw,3rem); }
-  .intro-inner{ max-width:46rem; }
-  .intro h1{ font-size:clamp(2rem,4.4vw,3.2rem); line-height:1.12; }
-  .intro p{ max-width:52ch; margin-top:1.3rem; color:var(--slate); font-size:1.05rem; }
+/* Header */
+header{position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:1rem;gap:1rem;}
+.mark{text-decoration:none;}
+.mark .name{font-size:1.3125rem;font-weight:700;}
+.mark-star{display:inline-block;margin-inline:.22em;font-size:.68em;
+  animation:mark-spin 4s linear infinite;transform-origin:50% 55%;}
+@keyframes mark-spin{to{transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce){.mark-star{animation:none;}}
+.navlinks{list-style:none;display:flex;gap:clamp(1.1rem,2.6vw,2.1rem);margin:0;padding:0;flex-wrap:wrap;}
+.navlinks a{font-size:.92rem;text-decoration:none;padding:.3rem 0;
+  border-bottom:1px solid transparent;color:var(--slate);}
+.navlinks a.active{color:var(--ink);border-color:var(--ink);}
+.navlinks a:hover{color:var(--ink);border-color:var(--slate);}
 
-  #work{ border-top:1px solid var(--line); padding-block:clamp(2rem,5vw,3rem); }
-  .proj-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.4rem,3vw,2.2rem); align-items:start; }
-  .proj-block{ display:flex; flex-direction:column; }
+/* Animations */
+@keyframes copy-reveal{
+  from{opacity:0;transform:translateY(14px) scale(.97);}
+  to{opacity:1;transform:translateY(0) scale(1);}
+}
+.reveal{animation:copy-reveal .8s cubic-bezier(0.16,1,0.3,1) both;}
+.reveal-1{animation-delay:.05s;}
+.reveal-2{animation-delay:.16s;}
+.reveal-3{animation-delay:.27s;}
+@media(prefers-reduced-motion:reduce){.reveal,.reveal-1,.reveal-2,.reveal-3{animation:none;}}
 
-  .proj-visual{ margin-top:1.1rem; width:100%; max-width:260px; aspect-ratio:1020/1350; border-radius:6px; font-size:.62rem; }
+/* Page intro */
+.work-intro{padding-block:clamp(2.5rem,6vw,4rem);}
+.work-h1{font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.12;margin-top:.6rem;}
+.work-dek{color:var(--slate);max-width:56ch;font-size:1.05rem;margin-top:1rem;}
 
-  .proj-title-row{ display:flex; flex-direction:column; align-items:flex-start; gap:.35rem; }
-  .proj-name{ font-size:clamp(1.02rem,1.7vw,1.2rem); font-weight:700; }
-  .proj-eyebrow{ font-size:.66rem; letter-spacing:.09em; text-transform:uppercase; color:var(--slate); font-weight:600; }
-  .proj-tag{ font-size:.6rem; letter-spacing:.05em; text-transform:uppercase; font-weight:700; color:var(--slate); border:1px solid var(--line); border-radius:3px; padding:.15rem .45rem; }
+/* Sticky section tabs */
+.tabs-wrap{position:sticky;top:var(--hh);z-index:90;
+  background:color-mix(in srgb,var(--paper) 96%,transparent);
+  backdrop-filter:blur(4px);border-bottom:1px solid var(--line);}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none;}
+.tabs::-webkit-scrollbar{display:none;}
+.tab{font-size:.88rem;padding:.85rem 1.4rem;text-decoration:none;color:var(--slate);
+  border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s;}
+.tab:hover{color:var(--ink);}
+.tab.active{color:var(--ink);border-bottom-color:var(--ink);}
 
-  .proj-chips-wrap{ max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(0.16,1,0.3,1); }
-  .proj-block:hover .proj-chips-wrap, .proj-block:focus-within .proj-chips-wrap{ max-height:8rem; }
-  .proj-chips{ display:flex; flex-direction:column; gap:.4rem; padding-top:.75rem; }
-  .proj-chip{ font-size:.6rem; letter-spacing:.05em; text-transform:uppercase; color:var(--slate); border-bottom:1px solid var(--line); padding-bottom:.15rem; align-self:flex-start; }
-  @media (prefers-reduced-motion: reduce){ .proj-chips-wrap{ transition:none; } }
+/* Work sections */
+.work-section{padding-block:clamp(3rem,6vw,4.5rem);border-top:1px solid var(--line);
+  scroll-margin-top:calc(var(--hh) + var(--th) + 1rem);}
+.section-title{font-size:clamp(1.4rem,2.8vw,1.8rem);margin-bottom:.5rem;}
+.section-intro{color:var(--slate);max-width:58ch;margin-bottom:1.8rem;}
 
-  .proj-link{ display:inline-block; margin-top:.7rem; font-size:.8rem; font-weight:600; text-decoration:none; color:var(--ink); white-space:nowrap; }
-  .proj-link:hover{ color:var(--slate); }
-  .proj-link .proj-link-star{ display:inline-block; margin-right:.35em; animation:mark-spin 4s linear infinite; transform-origin:50% 55%; }
-  @media (prefers-reduced-motion: reduce){ .proj-link .proj-link-star{ animation:none; } }
+/* Accordion case cards */
+.case-cards{display:flex;flex-direction:column;gap:1rem;margin-top:1.4rem;}
+.case-card{border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.case-trigger{width:100%;text-align:left;background:none;border:none;padding:1.6rem;
+  cursor:pointer;color:var(--ink);font:inherit;
+  display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;}
+.case-trigger:hover{background:var(--paper-soft);}
+.ctleft{display:flex;flex-direction:column;gap:.3rem;}
+.ctcat{font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+.ctname{font-size:1.12rem;font-weight:600;margin-top:.1rem;}
+.ctdesc{font-size:.9rem;color:var(--slate);}
+.ctstat{font-size:1.6rem;font-weight:700;margin-top:.5rem;line-height:1.1;}
+.ctstat-lbl{font-size:.76rem;color:var(--slate);}
+.cticon{font-size:1.5rem;color:var(--slate);line-height:1;
+  transition:transform .3s cubic-bezier(0.16,1,0.3,1);user-select:none;flex-shrink:0;}
+.case-card.open .cticon{transform:rotate(45deg);}
+.case-body{display:none;border-top:1px solid var(--line);padding:2rem 1.6rem;}
+.case-card.open .case-body{display:block;}
 
-  @media (max-width:760px){
-    .proj-grid{ grid-template-columns:1fr; max-width:340px; margin-inline:auto; }
-  }
+/* Case body internals */
+.cb-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;
+  margin-bottom:2rem;padding-bottom:1.8rem;border-bottom:1px solid var(--line);}
+.cb-stat-val{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;}
+.cb-stat-lbl{font-size:.78rem;color:var(--slate);margin-top:.3rem;}
+.cb-h3{font-size:1rem;font-weight:600;margin:0 0 .8rem;}
+.cb-buckets{display:flex;flex-direction:column;gap:1.2rem;margin-bottom:1.8rem;}
+.cb-bucket h4{font-size:.95rem;font-weight:600;margin:0;}
+.cb-bucket p{color:var(--slate);font-size:.9rem;margin-top:.3rem;}
 
-  @keyframes copy-reveal{
-    from{ opacity:0; transform:translateY(14px) scale(.97); }
-    to{ opacity:1; transform:translateY(0) scale(1); }
-  }
-  .reveal{ animation:copy-reveal .8s cubic-bezier(0.16,1,0.3,1) both; }
-  .reveal-1{ animation-delay:.05s; }
-  .reveal-2{ animation-delay:.16s; }
-  .reveal-3{ animation-delay:.27s; }
-  @media (prefers-reduced-motion: reduce){
-    .reveal, .reveal-1, .reveal-2, .reveal-3{ animation:none; }
-  }
+.cb-flow{display:flex;align-items:stretch;gap:0;margin:1rem 0 2rem;}
+.cb-fn{flex:1 1 0;text-align:center;padding:1rem .7rem;
+  border:1px solid var(--line);border-radius:4px;}
+.cb-fn-idx{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);}
+.cb-fn-lbl{font-size:.9rem;font-weight:600;margin-top:.4rem;}
+.cb-fn-det{font-size:.7rem;color:var(--slate);margin-top:.4rem;line-height:1.35;}
+.cb-fa{flex:0 0 clamp(.8rem,1.8vw,1.5rem);display:flex;align-items:center;
+  justify-content:center;color:var(--slate);font-size:.95rem;}
 
-  @media (max-width:560px){
-    .navlinks{ gap:.8rem; }
-    .navlinks a{ font-size:.8rem; }
-  }
+.cb-hl-list{display:flex;flex-direction:column;}
+.cb-hl-row{display:grid;grid-template-columns:5.5rem 1fr auto;gap:1rem;
+  align-items:center;padding-block:.9rem;border-top:1px solid var(--line);font-size:.9rem;}
+.cb-hl-row:first-child{border-top:none;}
+.cb-hl-fmt{font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+.cb-hl-stat{color:var(--slate);white-space:nowrap;font-size:.82rem;text-align:right;}
+
+.cb-quote{font-size:1.08rem;line-height:1.58;max-width:50ch;
+  margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid var(--line);
+  color:var(--slate);font-style:italic;}
+.cb-quote-attr{font-size:.82rem;color:var(--slate);margin-top:.5rem;font-style:normal;}
+
+/* Social / client blocks */
+.client-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1.4rem;}
+.client-block{border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.client-head{padding:1.2rem 1.2rem .9rem;border-bottom:1px solid var(--line);}
+.client-name{font-size:1rem;font-weight:600;}
+.client-role{font-size:.76rem;color:var(--slate);margin-top:.2rem;}
+.client-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:3px;}
+.client-thumb{aspect-ratio:1;}
+.client-stats{padding:.9rem 1.2rem;display:flex;gap:1rem;flex-wrap:wrap;
+  border-top:1px solid var(--line);}
+.client-stat{font-size:.78rem;color:var(--slate);}
+.client-stat strong{color:var(--ink);}
+
+/* Media tabs */
+.media-tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:1.6rem;}
+.mtab{font-size:.92rem;padding:.75rem 1.4rem .75rem 0;border:none;background:none;
+  cursor:pointer;color:var(--slate);border-bottom:2px solid transparent;
+  margin-bottom:-1px;font:inherit;transition:color .2s;}
+.mtab.active{color:var(--ink);border-bottom-color:var(--ink);}
+.mtab:hover{color:var(--ink);}
+.media-panel{display:none;}
+.media-panel.active{display:block;}
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;}
+.photo-tile{aspect-ratio:4/5;border-radius:4px;}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.video-item{display:flex;flex-direction:column;gap:.5rem;}
+.video-tile{aspect-ratio:16/9;border-radius:4px;}
+.video-cap{font-size:.76rem;color:var(--slate);}
+
+/* Paid ads */
+.ads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.4rem;}
+.ads-card{border:1px solid var(--line);border-radius:6px;padding:1.6rem;}
+.ads-platform{font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+.ads-stat{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-top:.9rem;}
+.ads-stat-lbl{font-size:.8rem;color:var(--slate);margin-top:.3rem;}
+.ads-desc{font-size:.88rem;color:var(--slate);margin-top:1rem;line-height:1.5;}
+
+@media(max-width:900px){
+  .client-grid{grid-template-columns:1fr 1fr;}
+  .ads-grid{grid-template-columns:1fr 1fr;}
+  .photo-grid{grid-template-columns:repeat(3,1fr);}
+  .video-grid{grid-template-columns:repeat(2,1fr);}
+  .cb-stats{grid-template-columns:1fr 1fr;}
+  .cb-flow{flex-wrap:wrap;}
+  .cb-fa{flex-basis:100%;height:.9rem;align-items:flex-start;}
+}
+@media(max-width:600px){
+  .client-grid{grid-template-columns:1fr;}
+  .ads-grid{grid-template-columns:1fr;}
+  .photo-grid{grid-template-columns:repeat(2,1fr);}
+  .video-grid{grid-template-columns:1fr;}
+  .cb-stats{grid-template-columns:1fr;}
+  .case-trigger{grid-template-columns:1fr;}
+  .cticon{display:none;}
+  .cb-hl-row{grid-template-columns:5rem 1fr;}
+  .cb-hl-stat{display:none;}
+  .navlinks{gap:.8rem;}
+  .navlinks a{font-size:.8rem;}
+}
 </style>
+</head>
+<body>
 
 <header>
   <div class="wrap nav">
-    <a href="../" class="mark">
-      <span class="name">Jackie<span class="mark-star">✳</span>Diaz</span>
-    </a>
+    <a href="../" class="mark"><span class="name">Jackie<span class="mark-star">✳</span>Diaz</span></a>
     <ul class="navlinks">
-      <li><a href="#work" class="active">Work</a></li>
+      <li><a href="." class="active">Work</a></li>
       <li><a href="../about/">About</a></li>
       <li><a href="../resume/">Resume</a></li>
-      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../#contact">Contact</a></li>
     </ul>
   </div>
 </header>
 
-<main>
-  <div class="wrap back-row">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="../">Home</a>
-      <span>/</span>
-      <span class="crumb-current">Work</span>
+<div class="tabs-wrap">
+  <div class="wrap">
+    <nav class="tabs" aria-label="Work categories">
+      <a href="#marketing" class="tab active">Marketing Strategy</a>
+      <a href="#social" class="tab">Social Media</a>
+      <a href="#media" class="tab">Video &amp; Photo</a>
+      <a href="#ads" class="tab">Paid Advertising</a>
     </nav>
   </div>
+</div>
 
-  <section class="intro">
-    <div class="wrap intro-inner">
-      <span class="eyebrow reveal reveal-1">Selected Work</span>
-      <h1 class="reveal reveal-2">Three marketing systems, built from the ground up.</h1>
-      <p class="reveal reveal-3">Strategy, creative direction, and paid media — treated as one connected system rather than three separate jobs.</p>
+<main>
+
+  <section class="work-intro">
+    <div class="wrap">
+      <span class="eyebrow reveal reveal-1">Work</span>
+      <h1 class="work-h1 reveal reveal-2">The full picture.</h1>
+      <p class="work-dek reveal reveal-3">Strategy, content, media, and photography — four areas, one consistent approach. Click any card to open the full case study.</p>
     </div>
   </section>
 
-  <section id="work">
+  <!-- Marketing Strategy -->
+  <section id="marketing" class="work-section">
     <div class="wrap">
-      <div class="proj-grid">
+      <h2 class="section-title">Marketing Strategy</h2>
+      <p class="section-intro">Integrated campaigns, analytics-driven direction, and content systems with measurable impact.</p>
+      <div class="case-cards">
 
-        <div class="proj-block">
-          <div class="proj-title-row">
-            <span class="proj-name">Kootenay Co-op Grocery Store</span>
-            <span class="proj-eyebrow">Integrated Marketing Campaign</span>
-            <span class="proj-tag">In-house</span>
-          </div>
-          <div class="proj-chips-wrap">
-            <div class="proj-chips">
-              <span class="proj-chip">Strategy &amp; Planning</span>
-              <span class="proj-chip">Creative Direction &amp; Production</span>
-              <span class="proj-chip">Paid Media &amp; Analytics</span>
+        <div class="case-card">
+          <button class="case-trigger" aria-expanded="false">
+            <div class="ctleft">
+              <span class="ctcat">Building Momentum Bikepacking · Volunteer</span>
+              <span class="ctname">Organic Content System</span>
+              <span class="ctdesc">Zero-budget social strategy across Instagram &amp; Facebook, May 2025 – May 2026.</span>
+              <span class="ctstat">120.3K <span style="font-size:.95rem;font-weight:400;">organic views</span></span>
+              <span class="ctstat-lbl">17.6K accounts reached · $0 paid spend</span>
             </div>
+            <span class="cticon" aria-hidden="true">+</span>
+          </button>
+          <div class="case-body">
+            <div class="cb-stats">
+              <div>
+                <div class="cb-stat-val">120.3K</div>
+                <div class="cb-stat-lbl">Organic views — roughly 153× the combined audience</div>
+              </div>
+              <div>
+                <div class="cb-stat-val">17.6K</div>
+                <div class="cb-stat-lbl">Accounts reached — roughly 22× the follower count</div>
+              </div>
+              <div>
+                <div class="cb-stat-val">$0</div>
+                <div class="cb-stat-lbl">Paid advertising spend behind any of it</div>
+              </div>
+            </div>
+            <p class="cb-h3">The Approach</p>
+            <div class="cb-buckets">
+              <div class="cb-bucket">
+                <h4>Strategy &amp; Planning</h4>
+                <p>Content strategy shaped by engagement data — platform-native formats, a consistent posting rhythm, and analytics reviewed regularly to steer direction rather than guess at it.</p>
+              </div>
+              <div class="cb-bucket">
+                <h4>Creative Direction &amp; Production</h4>
+                <p>Photography, videography, and short-form video editing built around real participants and real workshop moments — the storytelling that consistently outperformed direct promotional posts.</p>
+              </div>
+              <div class="cb-bucket">
+                <h4>Community &amp; Event Engagement</h4>
+                <p>Pre-event promotion, live documentation, and post-event recap content that kept the community connected in the gaps between workshops, rides, and campaigns.</p>
+              </div>
+            </div>
+            <p class="cb-h3">The Content System</p>
+            <div class="cb-flow">
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Before</div>
+                <div class="cb-fn-lbl">Announce</div>
+                <div class="cb-fn-det">Pre-event promotional content across posts, stories, and reels.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">During</div>
+                <div class="cb-fn-lbl">Document</div>
+                <div class="cb-fn-det">Live photo and video capture at workshops and rides.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">After</div>
+                <div class="cb-fn-lbl">Recap</div>
+                <div class="cb-fn-det">Post-event content, cross-posted and adapted into short-form video.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Between</div>
+                <div class="cb-fn-lbl">Sustain</div>
+                <div class="cb-fn-det">Participant-centered storytelling that kept community engaged until the next cycle.</div>
+              </div>
+            </div>
+            <p class="cb-h3">Top Performing Content</p>
+            <div class="cb-hl-list">
+              <div class="cb-hl-row">
+                <div class="cb-hl-fmt">Reel</div>
+                <div>Event promotion</div>
+                <div class="cb-hl-stat">7.7K views · 138 likes</div>
+              </div>
+              <div class="cb-hl-row">
+                <div class="cb-hl-fmt">Reel</div>
+                <div>Member feature — Sherri Kyle's story</div>
+                <div class="cb-hl-stat">6.1K views · 288 likes · 47 comments</div>
+              </div>
+              <div class="cb-hl-row">
+                <div class="cb-hl-fmt">Post</div>
+                <div>Fundraiser event promo — the sold-out film night</div>
+                <div class="cb-hl-stat">6K views · 32 shares</div>
+              </div>
+              <div class="cb-hl-row">
+                <div class="cb-hl-fmt">Reel</div>
+                <div>Member feature for event promotion</div>
+                <div class="cb-hl-stat">4.5K views · 205 likes</div>
+              </div>
+            </div>
+            <p class="cb-quote">"Audience size mattered a lot less than I expected — resonance mattered more. Once the storytelling was consistent and the people in it were real, the community carried it well past our own follower count, budget or no budget."</p>
+            <p class="cb-quote-attr">— Jackie Diaz</p>
           </div>
-          <a href="kootenay-coop/" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
-          <div class="proj-visual ph">1020 × 1350</div>
         </div>
 
-        <div class="proj-block">
-          <div class="proj-title-row">
-            <span class="proj-name">Building Momentum Bikepacking</span>
-            <span class="proj-eyebrow">Volunteer Marketing Leadership</span>
-            <span class="proj-tag">Volunteer</span>
-          </div>
-          <div class="proj-chips-wrap">
-            <div class="proj-chips">
-              <span class="proj-chip">Strategy &amp; Planning</span>
-              <span class="proj-chip">Creative Direction &amp; Production</span>
+        <div class="case-card">
+          <button class="case-trigger" aria-expanded="false">
+            <div class="ctleft">
+              <span class="ctcat">Kootenay Co-op · In-house</span>
+              <span class="ctname">Integrated Marketing Strategy</span>
+              <span class="ctdesc">5-week campaign for Member Appreciation Day &amp; Case Lot Sale.</span>
+              <span class="ctstat">5-week <span style="font-size:.95rem;font-weight:400;">phased rollout</span></span>
+              <span class="ctstat-lbl">Paid · owned · in-store — one clock</span>
             </div>
+            <span class="cticon" aria-hidden="true">+</span>
+          </button>
+          <div class="case-body">
+            <p style="color:var(--slate);margin-bottom:1.8rem;max-width:58ch;">A 5-week integrated campaign run across web, email, social, and in-store channels — using Member Appreciation Day and the Case Lot Sale as the example, walked through from planning through to results.</p>
+            <p class="cb-h3">The Approach</p>
+            <div class="cb-buckets">
+              <div class="cb-bucket">
+                <h4>Strategy &amp; Planning</h4>
+                <p>Built a five-week phased rollout — planning and asset development, then a staged awareness build, then launch — so every channel moved on the same clock instead of its own schedule.</p>
+              </div>
+              <div class="cb-bucket">
+                <h4>Creative Direction &amp; Production</h4>
+                <p>Directed and produced every creative asset — static and carousel posts, short- and long-form video, website banners, print ads, and in-store collateral — holding one consistent visual approach across all of it.</p>
+              </div>
+              <div class="cb-bucket">
+                <h4>Paid Media &amp; Analytics</h4>
+                <p>Staged Meta and Google ad spend to match the awareness curve — early ads introducing the campaign, then countdown messaging as the sale approached — with performance reporting across the full run.</p>
+              </div>
+            </div>
+            <p class="cb-h3">The Campaign System</p>
+            <div class="cb-flow">
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Week 5</div>
+                <div class="cb-fn-lbl">Plan &amp; Build</div>
+                <div class="cb-fn-det">Messaging, creative assets, landing page, and publication schedule.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Week 4</div>
+                <div class="cb-fn-lbl">Initial Awareness</div>
+                <div class="cb-fn-det">First Meta and Google ads live, directing to the landing page.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Week 3</div>
+                <div class="cb-fn-lbl">Reinforce</div>
+                <div class="cb-fn-det">Second ad phase, newspaper and flyers, two-week countdown.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Week 2</div>
+                <div class="cb-fn-lbl">Build Momentum</div>
+                <div class="cb-fn-det">Digital refreshed, website banners live, one-week countdown.</div>
+              </div>
+              <div class="cb-fa">→</div>
+              <div class="cb-fn">
+                <div class="cb-fn-idx">Week 1</div>
+                <div class="cb-fn-lbl">Campaign Launch</div>
+                <div class="cb-fn-det">Final ad phase, website updated, print sustained through the sale.</div>
+              </div>
+            </div>
+            <div class="cb-stats" style="margin-top:1.5rem;">
+              <div>
+                <div class="cb-stat-val"><span class="ph-inline">pending</span></div>
+                <div class="cb-stat-lbl">Reach &amp; awareness</div>
+              </div>
+              <div>
+                <div class="cb-stat-val"><span class="ph-inline">pending</span></div>
+                <div class="cb-stat-lbl">Engagement</div>
+              </div>
+              <div>
+                <div class="cb-stat-val"><span class="ph-inline">pending</span></div>
+                <div class="cb-stat-lbl">Sale participation</div>
+              </div>
+            </div>
+            <p class="cb-quote">"This is the campaign that showed me a phased system beats a single push every time — once paid, owned, and in-store were all moving on the same five-week clock, the whole thing got easier to plan, easier to produce, and easier to measure."</p>
+            <p class="cb-quote-attr">— Jackie Diaz</p>
           </div>
-          <a href="building-momentum/" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
-          <div class="proj-visual ph">1020 × 1350</div>
         </div>
 
-        <div class="proj-block">
-          <div class="proj-title-row">
-            <span class="proj-name">TrailSync App Design</span>
-            <span class="proj-eyebrow">UX Research &amp; Product Design</span>
-            <span class="proj-tag">Concept</span>
-          </div>
-          <div class="proj-chips-wrap">
-            <div class="proj-chips">
-              <span class="proj-chip">UX Research</span>
-              <span class="proj-chip">Product Design</span>
-              <span class="proj-chip">Digital Experience</span>
+        <div class="case-card">
+          <button class="case-trigger" aria-expanded="false">
+            <div class="ctleft">
+              <span class="ctcat">Coming soon</span>
+              <span class="ctname">Additional case study</span>
+              <span class="ctdesc">More work to be added here.</span>
             </div>
+            <span class="cticon" aria-hidden="true">+</span>
+          </button>
+          <div class="case-body">
+            <div class="ph" style="height:5rem;border-radius:4px;">Case study content — pending</div>
           </div>
-          <a href="#" class="proj-link"><span class="proj-link-star">✳</span>View case study →</a>
-          <div class="proj-visual ph">1020 × 1350</div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <!-- Social Media -->
+  <section id="social" class="work-section">
+    <div class="wrap">
+      <h2 class="section-title">Social Media</h2>
+      <p class="section-intro">Platform-native content, community management, and channel strategy across multiple clients.</p>
+      <div class="client-grid">
+
+        <div class="client-block">
+          <div class="client-head">
+            <div class="client-name">Kootenay Co-op</div>
+            <div class="client-role">Marketing &amp; Communications Coordinator — Ongoing</div>
+          </div>
+          <div class="client-thumbs">
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+          </div>
+          <div class="client-stats">
+            <span class="client-stat"><strong><span class="ph-inline">—</span></strong> followers</span>
+            <span class="client-stat"><strong><span class="ph-inline">—</span></strong> avg. reach</span>
+          </div>
+        </div>
+
+        <div class="client-block">
+          <div class="client-head">
+            <div class="client-name">Marchies</div>
+            <div class="client-role"><span class="ph-inline">role / dates</span></div>
+          </div>
+          <div class="client-thumbs">
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+          </div>
+          <div class="client-stats">
+            <span class="client-stat"><span class="ph-inline">metrics pending</span></span>
+          </div>
+        </div>
+
+        <div class="client-block">
+          <div class="client-head">
+            <div class="client-name"><span class="ph-inline">Client name</span></div>
+            <div class="client-role"><span class="ph-inline">Role / dates</span></div>
+          </div>
+          <div class="client-thumbs">
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+            <div class="client-thumb ph"></div>
+          </div>
+          <div class="client-stats">
+            <span class="client-stat"><span class="ph-inline">metrics pending</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video & Photo -->
+  <section id="media" class="work-section">
+    <div class="wrap">
+      <h2 class="section-title">Video &amp; Photography</h2>
+      <p class="section-intro">Shot and edited in-house — photography spans product, in-store, and lifestyle; video covers short-form reels through long-form event documentation.</p>
+      <div class="media-tabs">
+        <button class="mtab active" data-panel="photos">Photography</button>
+        <button class="mtab" data-panel="videos">Video</button>
+      </div>
+      <div id="photos" class="media-panel active">
+        <div class="photo-grid">
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+          <div class="photo-tile ph">photo</div>
+        </div>
+      </div>
+      <div id="videos" class="media-panel">
+        <div class="video-grid">
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+          <div class="video-item"><div class="video-tile ph">video</div><span class="video-cap ph-inline">caption pending</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paid Advertising -->
+  <section id="ads" class="work-section">
+    <div class="wrap">
+      <h2 class="section-title">Paid Advertising</h2>
+      <p class="section-intro">Campaign setup, audience targeting, ad creative, and performance reporting across Meta, Google, and traditional media.</p>
+      <div class="ads-grid">
+        <div class="ads-card">
+          <div class="ads-platform">Meta Ads</div>
+          <div class="ads-stat"><span class="ph-inline">—</span></div>
+          <div class="ads-stat-lbl">Key metric — pending</div>
+          <div class="ads-desc">Facebook and Instagram paid campaigns — audience targeting, creative testing, and performance reporting across awareness and conversion objectives.</div>
+        </div>
+        <div class="ads-card">
+          <div class="ads-platform">Google Ads</div>
+          <div class="ads-stat"><span class="ph-inline">—</span></div>
+          <div class="ads-stat-lbl">Key metric — pending</div>
+          <div class="ads-desc">Search and display campaigns — keyword strategy, ad copywriting, and bid management with regular performance reviews.</div>
+        </div>
+        <div class="ads-card">
+          <div class="ads-platform">Traditional Media</div>
+          <div class="ads-stat"><span class="ph-inline">—</span></div>
+          <div class="ads-stat-lbl">Key metric — pending</div>
+          <div class="ads-desc">Print, radio, and local publication placements — briefing, coordinating with vendors, and integrating into broader campaign timing.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-</body></html>
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll-driven tab highlight
+  var sections = document.querySelectorAll('.work-section');
+  var tabs = document.querySelectorAll('.tab');
+  if(!rm && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var id = e.target.id;
+          tabs.forEach(function(t){
+            t.classList.toggle('active', t.getAttribute('href') === '#'+id);
+          });
+        }
+      });
+    }, {rootMargin:'-20% 0px -60% 0px'});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  // Accordion
+  document.querySelectorAll('.case-trigger').forEach(function(trigger){
+    trigger.addEventListener('click', function(){
+      var card = trigger.closest('.case-card');
+      var isOpen = card.classList.contains('open');
+      document.querySelectorAll('.case-card.open').forEach(function(c){
+        c.classList.remove('open');
+        c.querySelector('.case-trigger').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        card.classList.add('open');
+        trigger.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  // Photo / video tab switcher
+  document.querySelectorAll('.mtab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var panel = btn.dataset.panel;
+      document.querySelectorAll('.mtab').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.media-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(panel).classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
