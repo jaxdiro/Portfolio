@@ -1,0 +1,87 @@
+/*
+ * Jackie Diaz Portfolio — Design Tokens
+ *
+ * Add these links in every page <head> BEFORE this stylesheet:
+ *   <link rel="preconnect" href="https://fonts.googleapis.com">
+ *   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+ */
+
+:root {
+  /* ── Surfaces ─────────────────────────────────────── */
+  --bg:        #F3F2F8;   /* page ground */
+  --panel:     #E9E8F2;   /* elevated panel, input fills */
+  --card:      #FFFFFF;   /* card surface */
+  --forest:    #1B2E22;   /* one deep surface per screen */
+  --lavender:  #DDD5FF;   /* soft lavender fill */
+  --lilac:     #EDE9FE;   /* softer lilac fill */
+
+  /* ── Brand ────────────────────────────────────────── */
+  --lime:      #C3F135;   /* single primary action per page */
+  --violet:    #5A30E2;   /* detail: links, star, active nav, focus */
+
+  /* ── Text ─────────────────────────────────────────── */
+  --ink:          #19182C; /* primary text */
+  --ink-soft:     #4A4868; /* secondary text on --card */
+  --muted:        #7E7C99; /* muted text on --bg and --panel only */
+  --on-forest:    #C8EECF; /* text on --forest */
+  --on-lime:      #192E0F; /* text on --lime */
+  --on-lavender:  #2C1F8C; /* text on --lavender */
+  --on-lilac:     #3A2AA8; /* text on --lilac */
+
+  /* ── Structure ────────────────────────────────────── */
+  --line:         rgba(25, 24, 44, 0.09);
+  --line-strong:  rgba(25, 24, 44, 0.18);
+
+  /* ── Shape ────────────────────────────────────────── */
+  --radius-card:  8px;
+  --radius-tag:   4px;
+  --radius-btn:   4px;
+  --radius-input: 4px;
+
+  /* ── Typography ───────────────────────────────────── */
+  --font: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #0F0E18;
+    --panel:     #17162A;
+    --card:      #1F1E31;
+    --forest:    #0D1F14;
+    --lavender:  #241C60;
+    --lilac:     #1F1858;
+    --lime:      #C3F135;
+    --violet:    #8B6EF5;
+    --ink:          #EEEDFB;
+    --ink-soft:     #B0AECE;
+    --muted:        #706D8C;
+    --on-forest:    #AAEAB5;
+    --on-lime:      #192E0F;
+    --on-lavender:  #C4B8FF;
+    --on-lilac:     #D4C8FF;
+    --line:         rgba(238, 237, 251, 0.09);
+    --line-strong:  rgba(238, 237, 251, 0.18);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:        #0F0E18;
+  --panel:     #17162A;
+  --card:      #1F1E31;
+  --forest:    #0D1F14;
+  --lavender:  #241C60;
+  --lilac:     #1F1858;
+  --lime:      #C3F135;
+  --violet:    #8B6EF5;
+  --ink:          #EEEDFB;
+  --ink-soft:     #B0AECE;
+  --muted:        #706D8C;
+  --on-forest:    #AAEAB5;
+  --on-lime:      #192E0F;
+  --on-lavender:  #C4B8FF;
+  --on-lilac:     #D4C8FF;
+  --line:         rgba(238, 237, 251, 0.09);
+  --line-strong:  rgba(238, 237, 251, 0.18);
+  color-scheme: dark;
+}
