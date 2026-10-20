@@ -1,0 +1,123 @@
+/* Jackie Diaz Portfolio — generated from tokens.json */
+/* Load the font once in <head>:
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"> */
+
+:root, [data-theme="light"] {
+  --bg: #f4f3ee;
+  --panel: #ffffff;
+  --card: #eceae3;
+  --ink: #141613;
+  --ink-soft: #4a4d46;
+  --muted: #6a6d65;
+  --line: #e1dfd7;
+  --track: #dedbd2;
+  --lime: #d8f06c;
+  --on-lime: #141613;
+  --forest: #1d4834;
+  --on-forest: #eef3e6;
+  --forest-muted: #a9c0b0;
+  --chip: #1d4834;
+  --violet: #5a3fc4;
+  --on-violet: #ffffff;
+  --lavender: #a89ff8;
+  --on-lavender: #141613;
+  --lilac: #e9e5fb;
+  --on-lilac: #3a2a99;
+  --ok: #23704a;
+  --ok-soft: #dff0e4;
+  --warn: #8a5a0b;
+  --warn-soft: #f6ebd3;
+  --bad: #b3363f;
+  --bad-soft: #f8e1e2;
+  --shadow-lift: 0 10px 24px rgba(20,22,19,0.08);
+  --shadow-pop: 0 24px 60px rgba(0,0,0,0.28);
+}
+
+/* Follows the visitor's system setting unless data-theme="light" is set on <html>. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111311;
+    --panel: #1a1d19;
+    --card: #20241f;
+    --ink: #eef0ea;
+    --ink-soft: #c3c8bd;
+    --muted: #a0a59b;
+    --line: #2c312a;
+    --track: #2e332c;
+    --lime: #d1ea66;
+    --on-lime: #141613;
+    --forest: #173b2a;
+    --on-forest: #eef3e6;
+    --forest-muted: #9db8a6;
+    --chip: #2f6b4c;
+    --violet: #b9b0ff;
+    --on-violet: #141613;
+    --lavender: #9d93f7;
+    --on-lavender: #141613;
+    --lilac: #2b2650;
+    --on-lilac: #d9d3ff;
+    --ok: #8ad6a8;
+    --ok-soft: #1b3326;
+    --warn: #e9b45c;
+    --warn-soft: #362812;
+    --bad: #f08a8f;
+    --bad-soft: #3a1b1d;
+    color-scheme: dark;
+  }
+}
+
+[data-theme="dark"] {
+  --bg: #111311;
+  --panel: #1a1d19;
+  --card: #20241f;
+  --ink: #eef0ea;
+  --ink-soft: #c3c8bd;
+  --muted: #a0a59b;
+  --line: #2c312a;
+  --track: #2e332c;
+  --lime: #d1ea66;
+  --on-lime: #141613;
+  --forest: #173b2a;
+  --on-forest: #eef3e6;
+  --forest-muted: #9db8a6;
+  --chip: #2f6b4c;
+  --violet: #b9b0ff;
+  --on-violet: #141613;
+  --lavender: #9d93f7;
+  --on-lavender: #141613;
+  --lilac: #2b2650;
+  --on-lilac: #d9d3ff;
+  --ok: #8ad6a8;
+  --ok-soft: #1b3326;
+  --warn: #e9b45c;
+  --warn-soft: #362812;
+  --bad: #f08a8f;
+  --bad-soft: #3a1b1d;
+  color-scheme: dark;
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-card: 24px;
+  --radius-pill: 999px;
+  --font-sans: Manrope, "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.display-xl { font-family: var(--font-sans); font-size: 58px; line-height: 1.05; font-weight: 800; letter-spacing: -0.035em; }
+.display-lg { font-family: var(--font-sans); font-size: 40px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
+.stat { font-family: var(--font-sans); font-size: 42px; line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.h2 { font-family: var(--font-sans); font-size: 28px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; }
+.h3 { font-family: var(--font-sans); font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; }
+.body { font-family: var(--font-sans); font-size: 17px; line-height: 1.6; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 15px; line-height: 1.5; font-weight: 400; }
+.label { font-family: var(--font-sans); font-size: 13px; line-height: 1.4; font-weight: 700; }
+.eyebrow { font-family: var(--font-sans); font-size: 11.5px; line-height: 1.4; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
